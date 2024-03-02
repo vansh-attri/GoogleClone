@@ -218,7 +218,6 @@ a:hover {
 
 input {
     flex: 1;
-    padding: 10px 20px;
     border: none;
     outline: none;
     background-color: rgba(32, 33, 36, 1);
@@ -229,6 +228,10 @@ input {
     .searchbar {
         width: 65vw;
         height: 7vw;
+    }
+
+    input{
+        width: 10px;
     }
 
     .logo img {
