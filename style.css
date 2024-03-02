@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(32, 33, 36, 1);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%;
+    width: 100%; */
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    height: 48px;
+    display: flex;
+    margin: 6px;
+    /* justify-content: space-around; */
+    /* align-items: right; */
+    justify-content: right;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 13px;
+    padding: 0 0 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 272px;
+    height: 92px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.searcharea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* height: 141.33px; */
+    margin: 20px 0;
+}
+
+.searchbar {
+    width: 582.67px;
+    height: 46px;
+    border: 1px solid #9aa0a6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 8px 0px 14px;
+}
+
+.rightsearchbar {
+    margin-left: auto;
+}
+
+#microphonelogo {
+    height: 21px;
+    width: 17px;
+    margin: 0 8px;
+
+}
+
+#lenslogo {
+    height: 23px;
+    width: 23px;
+    margin: 0 8px;
+}
+
+.searchlogo {
+    color: #9aa0a6;
+}
+
+.navbar ul img {
+    height: 30px;
+    width: 30px;
+    border-radius: 48px;
+}
+
+.buttons {
+    margin: 18px 0;
+}
+
+.btn1 :hover {
+    box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+    background-color: #303134;
+    border: 1px solid #5f6368;
+    color: #e8eaed;
+}
+
+.btn1,
+.btn2 {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.languages {
+    font-size: 13px;
+    color: #bdc1c6;
+}
+
+.languages a {
+    color: #8ab4f8;
+    text-decoration: none;
+    padding: 0 3px;
+}
+
+.languages a :hover {
+    text-decoration: underline;
+}
+
+.India {
+    position: fixed;
+    left: 0;
+    bottom: 47px;
+    background-color: #151515;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    height: 48px;
+}
+
+.India a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #151515;
+    display: flex;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.rightfooter ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50vw;
+    height: 46px;
+    padding: 0 20px;
+
+}
+
+.leftfooter ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50vw;
+    height: 46px;
+    padding: 0 20px;
+
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 13px;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(32, 33, 36, 1);
+    color: white;
+}
+
+@media only screen and (max-width: 960px) {
+    .searchbar {
+        width: 65vw;
+        height: 7vw;
+    }
+
+    .logo img {
+        width: 30vw;
+        height: 10vw;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    .languages span {
+        display: block;
+        margin-bottom: 2px;
+        padding: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #microphonelogo {
+        width: 3vw;
+        height: 2.8vw;
+    }
+
+    #lenslogo {
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+
+    nav ul li {
+        font-size: 10px;
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 11px;
+    }
+
+    footer ul li {
+        font-size: 10px;
+        padding: 0.5vw;
+    }
+
+    .footer {
+        font-size: 11px;
+    }
+
+    .languages {
+        font-size: 10px;
+    }
+
+    .India {
+        font-size: 10px;
+    }
+    
+    .searchlogo {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .languages {
+        font-size: 8px;
+    }
+
+    footer ul li {
+        font-size: 8px;
+        /* padding: 2px; */
+    }
+
+    .btn1,
+    .btn2 {
+        font-size: 9px;
+    }
+
+    nav ul li {
+        font-size: 8px;
+    }
+
+    .navbar ul img {
+        height: 20px;
+        width: 20px;
+        border-radius: 48px;
+    }
+    #microphonelogo, #lenslogo{
+        margin: 0 4px;
+    }
+}
